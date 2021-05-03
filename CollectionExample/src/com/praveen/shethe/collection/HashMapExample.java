@@ -2,7 +2,6 @@ package com.praveen.shethe.collection;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Objects;
 
 /**
  * Created by Praveenkumar on 5/3/2021.
@@ -26,17 +25,16 @@ public class HashMapExample {
 
 class Student {
 
-    Student(String name, String middleName, String lastName, int age, int rollNo){
+    private String name, middleName, lastName;
+    private int age, salary;
+
+    Student(String name, String middleName, String lastName, int age, int rollNo) {
         this.name = name;
         this.middleName = middleName;
         this.lastName = lastName;
         this.age = age;
         this.salary = rollNo;
     }
-
-    private String name, middleName, lastName;
-
-    private int age, salary;
 
     public String getName() {
         return name;
