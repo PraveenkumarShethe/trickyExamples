@@ -59,6 +59,11 @@ public class ArrayListExample {
             }
         });
         System.out.println(employees);
+        System.out.println("============================== (Name)SORTED LIST using lambda expression ======================================");
+        Collections.sort(employees, (employee1, employee2) -> {
+            return employee1.getName().compareTo(employee2.getName());
+        });
+        System.out.println(employees);
     }
 }
 
